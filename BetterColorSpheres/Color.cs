@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     class Color
     {
         private readonly byte r;
         private readonly byte g;
-        private readonly  byte b;
+        private readonly byte b;
         private readonly byte a;
         private const byte aplhamax = 255;
         public Color(byte red,byte green,byte blue,byte alpha){
@@ -16,7 +16,7 @@ namespace ColorSpheres
             a = alpha;
          }
 
-         public Color(byte red,byte green,byte blue){
+        public Color(byte red,byte green,byte blue){
             r = red;
             g = green;
             b = blue;

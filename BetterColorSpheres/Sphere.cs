@@ -1,7 +1,7 @@
 using System;
 using System.Drawing;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
     class Sphere{
         private readonly Color cor;
@@ -32,5 +32,9 @@ namespace ColorSpheres
             Console.WriteLine($"Esfera foi lançada {disparos} vezes");
         }
 
+        public static implicit operator Sphere(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
